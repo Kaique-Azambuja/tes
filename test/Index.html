@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="k.css">
+    <link rel="stylesheet" href="k.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hortifruti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Frutas Frescas e Verduras</h1>
+        <div class="cart">
+            <span id="cart-count">0</span> itens no carrinho
+            <button id="open-cart">Ver Carrinho</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>Frutas Disponíveis</h2>
+        <div class="products">
+            <div class="product" data-name="Tamarindo" data-price="2">
+                <img src="https://www.galaxcommerce.com.br/sistema/upload/1994/produtos/tamarindo-bandeja-aprox.-150-gramas_2020-07-30_14-51-35_0.jpg" alt="Tamarindo">
+                <h2>Tamarindo</h2>
+                <p>R$ 8,00 / kg</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="Jaca" data-price="13">
+                <img src="https://www.sitiodamata.com.br/media/catalog/product/cache/80281f1a4d89199560fc0837e49d13da/j/a/jaca-dura-artocarpus-heterophyllus_2nd.webp" alt="Jaca">
+                <h2>Jaca</h2>
+                <p>R$ 13,00 / kg</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="Alface Crespo" data-price="1,50">
+                <img src="https://cdn.awsli.com.br/2599/2599960/produto/262871607/alface-crespo-unidade-d012a742-lvb889e4ls-ho6h8q7mpw-1--lszvpcamb7.jpg" alt="Alface Crespo">
+                <h2>Alface Crespo</h2>
+                <p>R$ 1,50 / Pé</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="Limão Galego" data-price="1,50">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_665109-MLB40702822201_022020-O.webp" alt="Limão Galego">
+                <h2>Limão Galego</h2>
+                <p>R$ 1,50 / kg</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="Manga espada" data-price="4">
+                <img src="https://hortifruti.com.br/media/catalog/product/cache/90a67334732b2408839e146d4f241496/1/0/100179-manga-espada-unidade.jpg" alt="Manga">
+                <h2>Manga Espada</h2>
+                <p>R$ 2,00 / Unidade</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="Nectarina" data-price="16,50">
+                <img src="https://www.galaxcommerce.com.br/sistema/upload/1994/produtos/nectarina-unidade-aprox.-100-grms_2020-07-07_20-50-31_0.jpg" alt="Nectarina">
+                <h2>Nectarina</h2>
+                <p>R$ 35,50 / kg</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="jabuticaba" data-price="37,20">
+                <img src="https://mondiniplantas.cdn.magazord.com.br/img/2024/06/produto/5314/muda-jabuticaba-mondini-plantas.png?ims=800x800" alt="jabuticaba">
+                <h2>jabuticaba</h2>
+                <p>R$ 37,20 / kg</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="product" data-name="Hortelã" data-price="10,00">
+                <img src="https://scfoods.fbitsstatic.net/img/p/hortela-maco-70563/257058.jpg?w=800&h=800&v=no-change&qs=ignore" alt="Hortelã">
+                <h2>Hortelã</h2>
+                <p>R$ 10,00 / O Maço</p>
+                <button class="add-to-cart">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="hidden">
+        <div class="cart-modal-content">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items"></div>
+            <p>Total: R$ <span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Limpar Carrinho</button>
+            <button id="close-cart">Fechar</button>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div id="feedback" class="hidden">Item adicionado ao carrinho!</div>
+
+    <footer>
+        <h2>Formas de Contato</h2>
+        <p>Telefone: <a href="tel:+5511999999999">(11) 9999-9999</a></p>
+        <p>Endereço: <a href="https://www.google.com/maps/@-21.2685294,-51.6659169,3a,75y,0.32h,54.82t/data=!3m6!1e1!3m4!1suXeqgtwehfQvdbaRz0IgGg!2e0!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">372 Av. Gov. Carvalho Pinto
+            São João do Pau D'Alho, SP</a></p>
+    </footer>
+
+    <script src="k.js"></script>
+</body>
+</html>
